@@ -228,8 +228,65 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2ab0b4637fdf469eadcdc42060f5c33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Offset: {x: 1, y: 1, z: -10}
+  m_Offset: {x: 0, y: 0, z: -10}
   m_Player: {fileID: 1224763325}
+--- !u!1001 &1190517000
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 138890214635041141, guid: 81e2dc8b3a6fa442eadeec2d6fdbdc9e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.308691
+      objectReference: {fileID: 0}
+    - target: {fileID: 138890214635041141, guid: 81e2dc8b3a6fa442eadeec2d6fdbdc9e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.2085202
+      objectReference: {fileID: 0}
+    - target: {fileID: 138890214635041141, guid: 81e2dc8b3a6fa442eadeec2d6fdbdc9e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 138890214635041141, guid: 81e2dc8b3a6fa442eadeec2d6fdbdc9e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 138890214635041141, guid: 81e2dc8b3a6fa442eadeec2d6fdbdc9e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 138890214635041141, guid: 81e2dc8b3a6fa442eadeec2d6fdbdc9e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 138890214635041141, guid: 81e2dc8b3a6fa442eadeec2d6fdbdc9e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 138890214635041141, guid: 81e2dc8b3a6fa442eadeec2d6fdbdc9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 138890214635041141, guid: 81e2dc8b3a6fa442eadeec2d6fdbdc9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 138890214635041141, guid: 81e2dc8b3a6fa442eadeec2d6fdbdc9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4539848488300412518, guid: 81e2dc8b3a6fa442eadeec2d6fdbdc9e, type: 3}
+      propertyPath: m_Name
+      value: Ennemy
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 81e2dc8b3a6fa442eadeec2d6fdbdc9e, type: 3}
 --- !u!1 &1224763322
 GameObject:
   m_ObjectHideFlags: 0
@@ -242,10 +299,11 @@ GameObject:
   - component: {fileID: 1224763324}
   - component: {fileID: 1224763323}
   - component: {fileID: 1224763326}
-  - component: {fileID: 1224763327}
-  m_Layer: 0
+  - component: {fileID: 1224763328}
+  - component: {fileID: 1224763329}
+  m_Layer: 6
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -389,7 +447,37 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1224763327
+--- !u!114 &1224763328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224763322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 637fe43c6122e4b778c564e8749a348c, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &1224763329
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -403,6 +491,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Rigidbody: {fileID: 1224763326}
   m_Speed: 20
+  Health: 100
 --- !u!1 &2082467077
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,6 +502,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2082467079}
   - component: {fileID: 2082467078}
+  - component: {fileID: 2082467080}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -487,6 +577,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2082467080
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082467077}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -494,3 +629,4 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 1224763325}
   - {fileID: 2082467079}
+  - {fileID: 1190517000}
