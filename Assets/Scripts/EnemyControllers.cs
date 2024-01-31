@@ -73,7 +73,6 @@ public class EnemyControllers : MonoBehaviour
             {
                 //Quit function
                 attaquer = true;
-                Debug.Log(attaquer);
                 yield break;
             }
             //Wait for a frame so that Unity doesn't freeze

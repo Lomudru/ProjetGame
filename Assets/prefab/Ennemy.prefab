@@ -219,4 +219,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Rigidbody: {fileID: 3865198546473495681}
   speed: 2
-  damage: 0
+  damage: 10
