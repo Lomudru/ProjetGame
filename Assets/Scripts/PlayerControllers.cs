@@ -33,6 +33,9 @@ public class PlayerControllers : MonoBehaviour
     public float bullet_Speed;
     [SerializeField]
     public float bullet_LifeTime;
+    [SerializeField]
+    public float NextLevel;
+
 
     public int Health;
 
@@ -60,7 +63,6 @@ public class PlayerControllers : MonoBehaviour
     public bool attaquer = true;
     public float Exp = 0;
     public bool inMenu = false;
-    public float NextLevel = 100;
     private int score;
     private bool scored = false;
     // Start is called before the first frame update
